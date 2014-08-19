@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--1-100 for Material types, 100-1000 for sub processes, 1000-for Dimensions-->
+<IBIS>
+<DryBending>
+  <Material type ="Plywood" id="1">
+    <BendDirection type ="AcrossGrain" id="101">
+      <!-- Here are the thicknesses and min bending radii for dry bending process -->
+      <!--This thickness list is refrenced to the class. All numbers in inches-->
+      <Thickness type="0.250 inch" id="1001" > 24 </Thickness>
+      <Thickness type="0.3125 inch" id="1002" > 24 </Thickness>
+      <Thickness type="0.375 inch" id="1003" > 36 </Thickness>
+      <Thickness type="0.500 inch" id="1004" > 72 </Thickness>
+      <Thickness type="0.650 inch" id="1005" > 96 </Thickness>
+      <Thickness type="0.750 inch" id="1006" > 144 </Thickness>
+    </BendDirection>
+    <BendDirection type="ParallelToGrain" id="102">
+      <Thickness type="0.250 inch" id="1001" > 60 </Thickness>
+      <Thickness type="0.3125 inch" id="1002" > 72 </Thickness>
+      <Thickness type="0.375 inch" id="1003" > 96 </Thickness>
+      <Thickness type="0.500 inch" id="1004" > 144 </Thickness>
+      <Thickness type="0.650 inch" id="1005" > 192 </Thickness>
+      <Thickness type="0.750 inch" id="1006" > 240 </Thickness>
+    </BendDirection>
+  </Material>
+ <Material type ="MDF" id="2">
+   <BendDirection type ="None" id="101">
+     <Thickness type="1/8 in" id="1001" > 12 </Thickness>
+     <Thickness type="1/4 in" id="1002" > 15 </Thickness>
+     <Thickness type="1/2 in" id="1003" > 18 </Thickness>
+     <Thickness type="5/8 in" id="1004" > 25 </Thickness>
+     <Thickness type="3/4 in" id="1005" > 32 </Thickness>
+     <Thickness type="7/8 in" id="1006" > 37 </Thickness>
+   </BendDirection>
+  </Material>
+  <Material type ="PlaceHolder" id="3">
+    <BendDirection type ="None" id="101">
+      <Thickness type="10mm" id="1001" > 12 </Thickness>
+      <Thickness type="3mm" id="1002" > 15 </Thickness>
+      <Thickness type="4mm" id="1003" > 18 </Thickness>
+      <Thickness type="5mm" id="1004" > 25 </Thickness>
+      <Thickness type="6mm" id="1005" > 32 </Thickness>
+      <Thickness type="7mm" id="1006" > 37 </Thickness>
+    </BendDirection>
+  </Material>
+</DryBending>
+  <Mass>
+    <!-- These values are density values D x V gives Mass (in kg/m3) (Change Material2 later)-->
+    <Material2 type ="Aluminum 1200" id="1"> 2740  </Material2>
+    <Material2 type ="Brass" id="2"> 8800  </Material2>
+    <Material2 type ="Bronze" id="3"> 9000  </Material2>
+    <Material2 type ="Stainless Steel" id="4"> 8010  </Material2>
+  </Mass>
+  <!--For calculating the thickness of various sheet metals given the gauge, units to come later-->
+  <ThicknessGauge>
+    <ThicknessMaterial type ="Standard Steel" id="1">
+        <Gauge type="3" id="1001" > 0.2391 </Gauge>
+        <Gauge type="4" id="1002" > 0.2242 </Gauge>
+        <Gauge type="5" id="1003" > 0.2092 </Gauge>
+        <Gauge type="6" id="1004" > 0.1943 </Gauge>
+        <Gauge type="7" id="1005" > 0.1793 </Gauge>
+        <Gauge type="8" id="1006" > 0.1644 </Gauge>
+        <Gauge type="9" id="1007" > 0.1495 </Gauge>
+        <Gauge type="10" id="1008" > 0.1345	 </Gauge>
+      <Gauge type="11" id="1009" > 0.1196 </Gauge>
+      <Gauge type="12" id="1010" > 0.1046 </Gauge>
+      <Gauge type="13" id="1011" > 0.0897 </Gauge>
+      <Gauge type="14" id="1012" > 0.0747 </Gauge>
+      <Gauge type="15" id="1013" > 0.0673 </Gauge>
+      <Gauge type="16" id="1014" > 0.0598 </Gauge>
+      <Gauge type="17" id="1015" > 0.0538 </Gauge>
+      <Gauge type="18" id="1016" > 0.0478 </Gauge>
+      <Gauge type="19" id="1017" > 0.0418 </Gauge>
+      <Gauge type="20" id="1018" > 0.0359 </Gauge>
+      <Gauge type="21" id="1019" > 0.0329 </Gauge>
+      <Gauge type="22" id="1020" > 0.0299 </Gauge>
+      <Gauge type="23" id="1021" > 0.0269 </Gauge>
+      <Gauge type="24" id="1022" > 0.0239 </Gauge>
+      <Gauge type="25" id="1023" > 0.0209 </Gauge>
+      <Gauge type="26" id="1024" > 0.0179 </Gauge>
+      <Gauge type="27" id="1025" > 0.0164 </Gauge>
+      <Gauge type="28" id="1026" > 0.0149 </Gauge>
+      <Gauge type="29" id="1027" > 0.0135 </Gauge>
+      <Gauge type="30" id="1028" > 0.0120 </Gauge>
+      <Gauge type="31" id="1029" > 0.0105 </Gauge>
+      <Gauge type="32" id="1030" > 0.0097 </Gauge>
+      <Gauge type="33" id="1031" > 0.0090 </Gauge>
+      <Gauge type="34" id="1032" > 0.0082 </Gauge>
+      <Gauge type="35" id="1033" > 0.0075 </Gauge>
+      <Gauge type="36" id="1034" > 0.0067 </Gauge>
+      <Gauge type="37" id="1035" > 0.0064 </Gauge>
+      <Gauge type="38" id="1036" > 0.0060 </Gauge>
+    </ThicknessMaterial>
+    <ThicknessMaterial type ="Galvanized Steel" id="2">
+
+    </ThicknessMaterial>
+    <ThicknessMaterial type ="Stainless Steel" id="3">
+
+    </ThicknessMaterial>
+    <ThicknessMaterial type ="Aluminum" id="4">
+
+    </ThicknessMaterial>
+    <ThicknessMaterial type ="Zinc" id="5">
+
+    </ThicknessMaterial>
+    
+  </ThicknessGauge>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</IBIS>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<Metal>
+    <Aluminum>
+      <Cost>12</Cost>
+      <Density>151</Density>
+      <CO2_footprint> 1.8</CO2_footprint>
+    </Aluminum>
+  </Metal>-->
